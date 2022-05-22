@@ -20,6 +20,9 @@ public class Chore {
     @Column(name = "id", nullable = true)
     private Long id;
 
+    @Column(name="chore")
+    private String chore;
+
     @Column(name="done")
     private boolean done;
 }

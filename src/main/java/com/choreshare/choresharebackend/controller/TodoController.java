@@ -57,6 +57,7 @@ public class TodoController {
     }
 
     @DeleteMapping(path = "/all")
+    @CrossOrigin(origins = "http://localhost:3000")
     public List<Todo> deleteAllCompletedTodos() {
         List<Todo> todos = todoService.deleteAllCompletedTodos();
         return todos;
